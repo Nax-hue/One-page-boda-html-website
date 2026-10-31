@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Archeria</title>
+    </head>
+
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archeria</title>
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+    </style>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            background-color: white;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .navbar .logo img {
+            width: 300px;
+            height: 63.15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li:hover ul {
+            display: block;
+        }
+
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .navbar ul li ul li {
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
+        .navbar ul li ul li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .navbar button.login {
+            background-color: white;
+            border: 1px solid #000;
+            color: #000;
+        }
+
+        .navbar button.register {
+            background-color: #000;
+            color: white;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .main-content .text-content {
+            max-width: 50%;
+        }
+
+        .main-content h1 {
+            font-family: "Montserrat", sans-serif;
+             font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 140px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .main-content .cta-button {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .main-content .image-content {
+            max-width: 50%;
+            align-items: flex-end;
+        }
+
+        .main-content .image-content img {
+            width: 960px;
+            height: 1280px;
+            
+        
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            /* position: absolute; */
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                    <imag src="logo.jpeg" alt="Company Logo" />
+            </div>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+            </ul>
+
+            <li>Company</li>
+            <ul>
+                <li>About Us</li>
+                <li>Our Team</li>
+            </ul>
+
+            <li>Careers</li>
+            <ul>
+                <li>Job Openings</li>
+                <li>Interships</li>
+            </ul>
+
+            <li>About</li>
+            <ul>
+                <li>Our Story</li>
+                <li>Contact Us</li>
+            </ul>
+    
+            <div class="buttons">
+                <button class="register">Register</button>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-content">
+                <div class="text-content">
+                    <h1>Making <br>Remote Work Btter</h1>
+                    <p>Get your team insync, no matter your location. Streamline processes, create
+                        team rituals, </br> and watch productivity soar.
+                    </p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+                <div class="images-content">
+                    <img src="background.jpeg" alt="Remote Work Experience">
+                </div>
+            </div>
+        </div>
+
+        <Footer>
+            <p>All reserved. &copy; Archeria 2023 </p>
+        </Footer>
+    </body>
+</html>
